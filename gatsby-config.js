@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: "tutorial-gatsby",
+    title: "gatsby-tailwind",
   },
   plugins: [
     "gatsby-plugin-postcss",
