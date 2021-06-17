@@ -1,1 +1,1 @@
-## 🚀 Working in my first public gatsby project
+## 🚀 Working in my first public gatsby project with tailwind

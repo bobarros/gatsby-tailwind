@@ -188,6 +188,7 @@ button,
   transition: var(--transition);
   text-transform: capitalize;
 }
+
 button:hover,
 .btn:hover {
   color: var(--white);
