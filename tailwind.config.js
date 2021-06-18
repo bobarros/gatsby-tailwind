@@ -29,9 +29,9 @@ module.exports = {
 			},
       boxShadow: {
         'var1': "var(--shadow-1)",
-        'var1': "var(--shadow-2)",
-        'var1': "var(--shadow-3)",
-        'var1': "var(--shadow-4)",
+        'var2': "var(--shadow-2)",
+        'var3': "var(--shadow-3)",
+        'var4': "var(--shadow-4)",
       },
       maxWidth: {
         'maxvar': "var(--max-width)",
@@ -39,8 +39,11 @@ module.exports = {
       borderRadius: {
         'radius': "var(--borderRadius)",
       },
-      transitions: {
+      transitionProperty: {
         'tvar': "var(--transition)",
+      },
+      letterSpacing: {
+        'letterSpacing': "var(--letterSpacing)", 
       },
       colors: {
         'primary-0': "var(--primary-0)",
@@ -66,8 +69,7 @@ module.exports = {
         'smallText': "var(--smallText)",
         'extraSmallText': "var(--extraSmallText)",
         'backgroundColor': "var(--backgroundColor)",
-        'textColor': "var(--textColor)",        
-        'letterSpacing': "var(--letterSpacing)",                
+        'textColor': "var(--textColor)",      
         'fixed-width': "var(--fixed-width)",
       },
     },
