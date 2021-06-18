@@ -39,6 +39,9 @@ module.exports = {
       borderRadius: {
         'radius': "var(--borderRadius)",
       },
+      transitions: {
+        'tvar': "var(--transition)",
+      },
       colors: {
         'primary-0': "var(--primary-0)",
         'primary-50': "var(--primary-50)",
@@ -64,8 +67,7 @@ module.exports = {
         'extraSmallText': "var(--extraSmallText)",
         'backgroundColor': "var(--backgroundColor)",
         'textColor': "var(--textColor)",        
-        'letterSpacing': "var(--letterSpacing)",
-        'transition': "var(--transition)",        
+        'letterSpacing': "var(--letterSpacing)",                
         'fixed-width': "var(--fixed-width)",
       },
     },
