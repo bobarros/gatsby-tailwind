@@ -450,7 +450,7 @@ form > *:last-child {
 .page-footer {
   text-align: center;
   height: 4rem;
-  display: flex;
+  display: flex; 
   align-items: center;
   justify-content: center;
   background: var(--black);

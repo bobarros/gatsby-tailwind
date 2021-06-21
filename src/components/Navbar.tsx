@@ -1,6 +1,6 @@
 ////////////////////////////////////////////// React
 
-import React from "react";
+import React, {useState} from "react";
 
 ///////////////////////////////////////////// Gatsby
 
@@ -17,6 +17,9 @@ import { FiAlignJustify } from "react-icons/fi";
 ////////////////////////////////////////// Component
 
 const Navbar = () => {
+
+  const [show, setShow] =useState(false);
+  
   return (
     <nav className={s.navbar}>
       <div className={s.navCenter}>
@@ -24,11 +27,11 @@ const Navbar = () => {
           <Link to="/">
             <LogoSVG />
           </Link>
-          <button className={s.button}>
+          <button className={s.button} onClick={() => setShow(!show)}>
             <FiAlignJustify />
           </button>
         </div>
-        <div className={s.navLinks}>
+        <div className={show ? s.navLinksShow : s.navLinks}>
           <Link to="/" className={s.navLink} activeClassName="active-link">home</Link>
           <Link to="/about" className={s.navLink} activeClassName="active-link">about</Link>          
           <Link to="/tags" className={s.navLink} activeClassName="active-link">tags</Link>
@@ -51,10 +54,11 @@ const s = {
   navCenter: "w-90w max-w-maxvar lg:flex lg:items-center",
   navHeader: "h-24 flex justify-between items-center lg:p-0 lg:mr-o lg:h-auto",
   button: "py-0.5 px-3 lg:hidden",
-  navLinks: "h-0 overflow-hidden flex flex-col transition-tvar show-links lg:h-auto lg:flex-row lg:items-center lg:w-full",
+  navLinks: "h-0 overflow-hidden flex flex-col transition-tvar lg:h-auto lg:flex-row lg:items-center lg:w-full",
+  navLinksShow: "h-96 overflow-hidden flex flex-col transition-tvar lg:h-auto lg:flex-row lg:items-center lg:w-full",
   navLink: "block text-center text-2xl capitalize text-textColor tracking-letterSpacing py-4 px-0 border-t border-gray-300 transition-tvar lg:p-0 lg:border-t-0 lg:mr-4 text-base",
   contactLink: "flex justify-center py-1 px-4",
-  activeLink: "text-primary-500", //does not work with tailwind
+  activeLink: "text-primary-500", //does not work with tailwind for activeClassName
   contactButton: "cursor-pointer appearance-none text-white bg-primary-500 border-none rounded-radius tracking-letterSpacing py-1.5 px-3 shadow-var1 transition-tvar capitalize",
   contactHover: "hover:bg-primary-700 hover:shadow-var2"
 }
