@@ -31,7 +31,7 @@ export default Button;
 const 
   defaultState = `
   appearance-none cursor-pointer text-white bg-primary-500 border-none 
-  rounded-radius tracking-letterSpacing py-1.5 px-3shadow-var1 transition-tvar 
+  rounded-radius tracking-letterSpacing py-1.5 px-3 shadow-var1 transition-tvar 
   capitalize
   `,
   hoverState = "hover:bg-primary-700 hover:shadow-var2";

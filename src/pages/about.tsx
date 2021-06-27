@@ -33,12 +33,12 @@ const About = () => {
           <StaticImage
             src="../images/about.jpeg"
             alt="Person Pouring Salt in Bowl"
-            className="about-img"
+            className={image}
             placeholder="blurred"
           />
         </section>
-        <section className="featured-recipes">
-          <h5>Look at this Awesomesouce!</h5>
+        <section>
+          <h5 className={recipes}>Look at this Awesomesouce!</h5>
         </section>
       </div>
     </Layout>
@@ -51,7 +51,7 @@ export default About
 
 const 
   div = "w-90w max-w-maxvar min-h-minvar my-0 mx-auto",
-  section = "grid gap-y-8 gap-x-16 pb-12 lg:h-16 lg:items-center lg:grid-cols-2",
+  section = "grid gap-y-8 gap-x-16 pb-12 lg:h-400px lg:items-center lg:grid-cols-2",
   h2 = "normal-case font-bold",
-  image = "rounded-radius",
-  recipes = "";
+  image = "rounded-radius h-500px lg:h-full",
+  recipes = "text-center max-w-full";
