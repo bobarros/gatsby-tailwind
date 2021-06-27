@@ -9,9 +9,9 @@ import { Layout } from '../layouts'
 const Page404 = () => {
   return (
     <Layout>
-      <div className="min-h-screen text-center py-12">
+      <div className={s.div}>
         <section>
-          <h1 className="text-9xl">404</h1>
+          <h1 className={s.h1}>404</h1>
           <h2>page not found</h2>
         </section>
       </div>
@@ -20,3 +20,10 @@ const Page404 = () => {
 };
 
 export default Page404;
+
+/////////////////////////////////////////// Tailwind style
+
+const s = {
+  div: "min-h-screen text-center py-12",
+  h1: "text-9xl",
+}
