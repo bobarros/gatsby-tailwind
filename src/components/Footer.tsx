@@ -6,14 +6,14 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className={style.footer}>
-      <p className={style.p}>
+    <footer className={footer}>
+      <p className={p}>
         &copy; {new Date().getFullYear()}{" "}
-        <span className={style.span}>
+        <span className={span}>
           Bruno's TailWind Project{" "}
         </span> 
         Built with{" "}
-        <a className={style.a} target="_blank" rel="noopener" href="https://www.gatsbyjs.com/">
+        <a className={a} target="_blank" rel="noopener" href="https://www.gatsbyjs.com/">
           Gatsby
         </a>
       </p>
@@ -25,9 +25,8 @@ export default Footer;
 
 /////////////////////////////////////////// Tailwind style
 
-const style = {
-  footer: "text-center h-16 flex items-center justify-center bg-black color text-white",
-  p: "mb-0",
-  span: "text-primary-500",
-  a: "text-primary-500"
-}
+const 
+  footer = "text-center h-16 flex items-center justify-center bg-black color text-white",
+  p = "mb-0",
+  span = "text-primary-500",
+  a = "text-primary-500";

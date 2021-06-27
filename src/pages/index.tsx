@@ -9,7 +9,7 @@ import { Layout } from '../layouts'
 const Index = () => {
   return (
     <Layout>
-      <div className="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-md flex items-center space-x-4">
+      <div className={div}>
         Home page
       </div>
     </Layout>
@@ -17,3 +17,8 @@ const Index = () => {
 };
 
 export default Index;
+
+/////////////////////////////////////////// Tailwind style
+
+const 
+  div = "p-6 max-w-sm mx-auto bg-white rounded-xl shadow-md flex items-center space-x-4";

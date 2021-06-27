@@ -18,7 +18,7 @@ type ButtonType = {
 
 const Button = ({ to, text = "Contact", onClick }:ButtonType) => {
   return (
-    <Link to={to} className={`${s.default} ${s.hover}`} onClick={onClick}>
+    <Link to={to} className={`${defaultState} ${hoverState}`} onClick={onClick}>
       {text}
     </Link>
   );
@@ -28,21 +28,10 @@ export default Button;
 
 /////////////////////////////////////////// Tailwind style
 
-const s = {
-  default: `
-    appearance-none 
-    cursor-pointer 
-    text-white 
-    bg-primary-500 
-    border-none 
-    rounded-radius 
-    tracking-letterSpacing 
-    py-1.5 px-3
-    shadow-var1 
-    transition-tvar 
-    capitalize`,
-  hover: `
-    hover:bg-primary-700 
-    hover:shadow-var2
+const 
+  defaultState = `
+  appearance-none cursor-pointer text-white bg-primary-500 border-none 
+  rounded-radius tracking-letterSpacing py-1.5 px-3shadow-var1 transition-tvar 
+  capitalize
   `,
-};
+  hoverState = "hover:bg-primary-700 hover:shadow-var2";
