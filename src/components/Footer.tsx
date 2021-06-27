@@ -10,7 +10,7 @@ const Footer = () => {
       <p className={style.p}>
         &copy; {new Date().getFullYear()}{" "}
         <span className={style.span}>
-          SimplyRecipes
+          Bruno's TailWind Project{" "}
         </span> 
         Built with{" "}
         <a className={style.a} target="_blank" rel="noopener" href="https://www.gatsbyjs.com/">

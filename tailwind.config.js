@@ -36,6 +36,9 @@ module.exports = {
       maxWidth: {
         'maxvar': "var(--max-width)",
       },
+      minHeight: {
+        'minvar': "calc(100vh - (6rem + 4rem))",
+      },
       borderRadius: {
         'radius': "var(--borderRadius)",
       },

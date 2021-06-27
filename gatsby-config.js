@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: "gatsby-tailwind",
+    title: "gatsby Tailwind",
+    siteUrl: "https://brunobarros.dev"
   },
   plugins: [
     "gatsby-plugin-postcss",
